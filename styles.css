@@ -167,6 +167,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
+    padding-bottom: 5rem;
 }
 .creations-grid-container article{
     position: relative;
@@ -183,4 +184,47 @@ body {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 100;
     font-size: 1.6rem;
-    letter-spacing: 1.6px;}
+    letter-spacing: 1.6px;
+}
+.footer{
+    padding: 2rem 10vw;
+    background-color: #1e1e1e;
+    color: white;
+}
+.upper-footer,
+.lower-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.upper-footer{
+    padding-bottom: 1rem;
+}
+.upper-footer-logo{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.socials img{
+    padding: 0px 0.2rem;
+    width: 24px;
+    cursor: pointer;
+}
+.nav-footer a {
+    text-decoration: none;
+    color: inherit;
+    padding-right: 1rem;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width:430px) {
+    .our-creations-title{
+    
+     flex-direction: column;
+    }
+    .upper-footer,
+    .lower-footer{
+       flex-direction: column;
+       align-items: center;
+    text-align: center;}
+}
